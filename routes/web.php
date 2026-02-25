@@ -7,8 +7,12 @@ Route::get('/', function () {
     return view('welcome')->with('success', 'User created successfully!');
 });
 
-Route::get('/mina', function () {
-    return view('mina');
+Route::get('/main', function () {
+    return view('main');
+});
+
+Route::get('/index', function () {
+    return view('index');
 });
 
 Route::get('/dashboard', function () {

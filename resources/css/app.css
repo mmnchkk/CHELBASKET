@@ -8,7 +8,36 @@
 @tailwind utilities;
 
 body {
-    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.red {
+    color: red;
+    background: pink;
+}
+
+.green {
+    color: green;
+    background-color: lightgreen;
+}
+
+.blue {
+    color: blue;
+    background: lightskyblue;
+}
+
+.red, .green, .blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
 }
 
 

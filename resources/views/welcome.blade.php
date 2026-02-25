@@ -20,9 +20,6 @@
         @endif
     </head>
     <body>
-        <header>O;FSDKXLSZA[PFGLPSBGJCKFVDS;FP'XBKJVLCXD;C'LXVBKCJ]</header>  
-        <main>
-            <a href="/mina">МИНА</a>
-        </main>
+        
     </body>
 </html>
