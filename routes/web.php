@@ -15,6 +15,18 @@ Route::get('/index', function () {
     return view('index');
 });
 
+Route::get('/catalog', function () {
+    return view('home');
+});
+
+Route::get('/registration', function () {
+    return view('registration');
+});
+
+Route::get('/autorisation', function () {
+    return view('autorisation');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
