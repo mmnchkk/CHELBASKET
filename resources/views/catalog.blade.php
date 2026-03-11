@@ -1,3 +1,7 @@
+@push('vite')
+    @vite('resources/css/catalog.css')
+@endpush
+
 <x-main-layout>
     <x-slot:title>
         Челбаскет
@@ -6,7 +10,7 @@
       <div class="width">
         <h1 class="title-catalog">Каталог</h1>
       <div class="cards" id="cardsContainer">
-        <a href="new_collection.html" class="card">
+        <a href="new-collection" class="card">
             <img src="img/catalog/баннер10.svg" alt="">
         </a>
         <a href="#" class="card">

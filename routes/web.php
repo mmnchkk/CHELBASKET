@@ -16,7 +16,11 @@ Route::get('/index', function () {
 });
 
 Route::get('/catalog', function () {
-    return view('home');
+    return view('catalog');
+});
+
+Route::get('/new-collection', function () {
+    return view('new-collection');
 });
 
 Route::get('/registration', function () {
