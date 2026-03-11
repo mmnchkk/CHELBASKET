@@ -3,17 +3,13 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+// Route::get('/', function () {
+//     return view('welcome')->with('success', 'User created successfully!');
+// });
+
 Route::get('/', function () {
-    return view('welcome')->with('success', 'User created successfully!');
-});
-
-Route::get('/main', function () {
-    return view('main');
-});
-
-Route::get('/index', function () {
     return view('index');
-});
+})->name('home');
 
 Route::get('/catalog', function () {
     return view('catalog');
@@ -25,15 +21,15 @@ Route::get('/new-collection', function () {
 
 Route::get('/registration', function () {
     return view('registration');
-});
+})->middleware('guest')->name('registration');
 
 Route::get('/autorisation', function () {
     return view('autorisation');
-});
+})->middleware('guest')->name('autorisation');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/user', function () {
+    return view('user');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
