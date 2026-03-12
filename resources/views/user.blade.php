@@ -10,9 +10,7 @@
 <h2 class="main-title">Личный кабинет</h2>
 
       <div class="main-navigation">
-        <a href="history_of_orders.html"
-          ><button class="btn-history">История заказов</button></a
-        >
+        <a href="{{ route('history') }}"><button class="btn-history">История заказов</button></a>
         <a href="#"><button class="btn-status">Статус заказа</button></a>
       </div>
 

@@ -41,23 +41,7 @@
         
        <div class="more-cards">
          <div class="cards">
-            <a href="card.html" class="card-link">
-                <div class="card">
-                    <div class="rating">
-                        <span>5</span><img class="star" src="img/icons/star.svg" alt="">
-                    </div>
-                    <div class="edit">
-                        <img src="img/icons/edit.svg" alt="edit">
-                    </div>
-                    <img class="card-image" src="img/ball_icanplay.svg" alt="Товар" />
-                    <div class="description">
-                        <p class="title">Футболка с логотипом Челбаскета</p>
-                        <p class="price">1990₽</p>
-                    </div>
-                    <div class="card-button">В корзину</div>
-                </div>
-            </a>
-            @for ($i = 0; $i < 7; $i++)
+            @for ($i = 0; $i < 8; $i++)
                 <a href="card" class="card-link"><x-cards rating="5" image="/img/ball_icanplay.svg" title="Футболка с логотипом Челбаскета" price="1990" /></a>
             @endfor
             @for ($i = 0; $i < 7; $i++)

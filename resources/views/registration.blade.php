@@ -5,10 +5,10 @@
 
         <!-- <h1></h1> -->
         <div class="main-navigation">
-          <a href="autorisation">
+          <a href="{{ route('autorisation') }}">
             <button class="btn-autorisation">Вход</button>
           </a>
-          <a href="registration">
+          <a href="{{ route('registration') }}">
             <button class="btn-registration">Регистрация</button>
           </a>
         </div>

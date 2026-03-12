@@ -13,11 +13,11 @@ Route::get('/', function () {
 
 Route::get('/catalog', function () {
     return view('catalog');
-});
+})->name('catalog');
 
 Route::get('/new-collection', function () {
     return view('new-collection');
-});
+})->name('new-collection');
 
 Route::get('/registration', function () {
     return view('registration');
@@ -29,7 +29,27 @@ Route::get('/autorisation', function () {
 
 Route::get('/user', function () {
     return view('user');
-});
+})->name('user');
+
+Route::get('/balls', function () {
+    return view('balls');
+})->name('balls');
+
+Route::get('/history', function () {
+    return view('history');
+})->name('history');
+
+Route::get('/buy', function () {
+    return view('buy');
+})->name('buy');
+
+Route::get('/basket', function () {
+    return view('basket');
+})->name('basket');
+
+Route::get('/card', function () {
+    return view('card');
+})->name('card');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
