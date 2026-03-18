@@ -38,9 +38,9 @@
             <div class="more-cards">
                 <div class="cards">
                     @foreach ($products as $product)
-                    <a href="{{ route('card') }}" class="card-link">
-                        <x-cards :products="[$product]" />
-                    </a>
+                        <a href="{{ route('card') }}" class="card-link">
+                            <x-cards :products="[$product]" />
+                        </a>
                     @endforeach
                 </div>
             </div>
