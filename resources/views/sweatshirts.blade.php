@@ -7,12 +7,12 @@
 
 <x-main-layout>
     <x-slot:title>
-        Мячи
+        Кофты
     </x-slot:title>
 
     <div class="main">
         <div class="width">
-            <h1 class="title-catalog">Мячи</h1>
+            <h1 class="title-catalog">Кофты</h1>
 
             <div class="filters">
                 <button class="filter-open-btn">
@@ -39,7 +39,7 @@
                 <div class="cards">
 
                     @php
-                        $categoryId = 1;
+                        $categoryId = 2;
                     @endphp
 
                     @foreach ($products->where('category_id', $categoryId) as $product)

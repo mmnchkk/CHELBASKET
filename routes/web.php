@@ -17,7 +17,8 @@ Route::get('/catalog', function () {
 })->name('catalog');
 
 Route::get('/new-collection', function () {
-    return view('new-collection');
+    $products = Product::all();
+    return view('new-collection', compact('products'));
 })->name('new-collection');
 
 Route::get('/registration', function () {
@@ -37,6 +38,30 @@ Route::get('/balls', function () {
     return view('balls', compact('products'));
 })->name('balls');
 
+Route::get('/t-shirt', function () {
+    $products = Product::all();
+    return view('t-shirt', compact('products'));
+})->name('t-shirt');
+
+Route::get('/singlet', function () {
+    $products = Product::all();
+    return view('singlet', compact('products'));
+})->name('singlet');
+
+Route::get('/souvenirs', function () {
+    $products = Product::all();
+    return view('souvenirs', compact('products'));
+})->name('souvenirs');
+
+Route::get('/sweatshirts', function () {
+    $products = Product::all();
+    return view('sweatshirts', compact('products'));
+})->name('sweatshirts');
+
+Route::get('/form', function () {
+    $products = Product::all();
+    return view('form', compact('products'));
+})->name('form');
 
 Route::get('/history', function () {
     return view('history');

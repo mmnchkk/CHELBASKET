@@ -13,19 +13,19 @@
                 <a href="new-collection" class="card">
                     <img src="img/catalog/баннер1.svg" alt="">
                 </a>
-                <a href="#" class="card">
+                <a href="sweatshirts" class="card">
                     <img src="img/catalog/баннер2.svg" alt="">
                 </a>
-                <a href="#" class="card">
+                <a href="t-shirt" class="card">
                     <img src="img/catalog/баннер3.svg" alt="">
                 </a>
-                <a href="#" class="card">
+                <a href="souvenirs" class="card">
                     <img src="img/catalog/баннер4.svg" alt="">
                 </a>
-                <a href="#" class="card">
+                <a href="singlet" class="card">
                     <img src="img/catalog/баннер5.svg" alt="">
                 </a>
-                <a href="#" class="card">
+                <a href="form" class="card">
                     <img src="img/catalog/баннер6.svg" alt="">
                 </a>
                 <a href="balls" class="card">

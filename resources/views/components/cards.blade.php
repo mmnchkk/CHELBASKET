@@ -18,6 +18,9 @@
         <p class="price">{{ $product->price }} ₽</p>
     </div>
 
-    <div class="card-button">В корзину</div>
+    <div class="card-button
+        {{ $product->stock_quantity > 0 ? '' : 'card-button-none' }}">
+        {{ $product->stock_quantity > 0 ? 'В корзину' : 'Нет в наличии' }}
+    </div>
 </div>
 @endforeach

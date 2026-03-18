@@ -19,11 +19,11 @@
                     <li class="dropdown">
                         <a class="link" href="{{ route('catalog') }}">Каталог <img src="img/icons/arrow_down.svg" alt="arrow" width="25px"></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Футболки</a></li>
-                            <li><a href="#">Майки</a></li>
+                            <li><a href="{{ route('t-shirt') }}">Футболки</a></li>
+                            <li><a href="{{ route('singlet') }}">Майки</a></li>
                             <li><a href="{{ route('balls') }}">Мячи</a></li>
-                            <li><a href="#">Кофты</a></li>
-                            <li><a href="#">Сувениры</a></li>
+                            <li><a href="{{ route('sweatshirts') }}">Кофты</a></li>
+                            <li><a href="{{ route('souvenirs') }}">Сувениры</a></li>
                         </ul>
                     </li>
                 </ul>
