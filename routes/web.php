@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Product;
 
 // Route::get('/', function () {
 //     return view('welcome')->with('success', 'User created successfully!');
@@ -32,8 +33,10 @@ Route::get('/user', function () {
 })->name('user');
 
 Route::get('/balls', function () {
-    return view('balls');
+    $products = Product::all();
+    return view('balls', compact('products'));
 })->name('balls');
+
 
 Route::get('/history', function () {
     return view('history');

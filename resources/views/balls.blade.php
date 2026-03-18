@@ -2,6 +2,7 @@
     @vite('resources/css/balls.css')
     @vite('resources/css/cards.css')
     @vite('resources/css/overlay.css')
+    @vite('app/Models/Product.php')
 @endpush
 
 <x-main-layout>
@@ -33,17 +34,24 @@
                 </div>
             </div>
 
+
+            <div class="more-cards">
+                <div class="cards">
+                    @foreach ($products as $product)
+                    <a href="{{ route('card') }}" class="card-link">
+                        <x-cards :products="[$product]" />
+                    </a>
+                    @endforeach
+                </div>
+            </div>
+
              <div class="more-cards">
-         <div class="cards">
-            @for ($i = 0; $i < 8; $i++)
-                <a href="{{ route('card') }}" class="card-link"><x-cards rating="5" image="/img/ball_icanplay.svg" title="Футболка с логотипом Челбаскета" price="1990" /></a>
-            @endfor
-            @for ($i = 0; $i < 7; $i++)
-                <a href="{{ route('card') }}" class="card-link"><x-card-none image="/img/ball_icanplay.svg" title="Футболка с логотипом Челбаскета" price="1990"/></a>
-            @endfor
-            <a href="{{ route('card') }}" class="card-link"><x-cards rating="5" image="/img/ball_icanplay.svg" title="Футболка с логотипом Челбаскета" price="1990" /></a>
-         </div>
-       </div>
+                <div class="cards">
+                    @for ($i = 0; $i < 8; $i++)
+                        <x-cards link="{{ route('card') }}" rating="5" image="/img/ball_icanplay.svg" title="Футболка с логотипом Челбаскета" price="1990" />
+                    @endfor
+                </div>
+            </div>
 
             <div class="btn-down">
                 <button class="load-more-btn">загрузить ещё</button>
