@@ -1,37 +1,7 @@
-@font-face {
-  font-family: "PaluiSP"; 
-  src: url("../../public/fonts/PaluiSPDemo-Bold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-@font-face {
-  font-family: "VisbyBold"; 
-  src: url("../../public/fonts/VisbyBold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
-@font-face {
-  font-family: "VisbyHeavy"; 
-  src: url("../../public/fonts/VisbyHeavy.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
-@font-face {
-  font-family: "VisbySemibold"; 
-  src: url("../../public/fonts/VisbySemibold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
+@import "fonts.css";
 
 .main {
-    background-color: #191919;
-    padding-bottom: 210px;
-    background-image: url("../../public/img/home/back-main.png");
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: 100%;
+  padding: 200px 0;
   font-family: "VisbyBold", sans-serif;
   color: #fbfbfb;
 }
@@ -46,34 +16,6 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
-}
-
-/* Хлебные крошки */
-.nav-menu {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.nav-items {
-  display: flex;
-  gap: 10px;
-  font-size: 16px;
-}
-
-.nav-item {
-  list-style: none;
-  cursor: default;
-}
-
-.nav-item a {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.nav-item a:hover {
-  color: #3b71b7;
 }
 
 /* Основной контейнер товара */
@@ -189,7 +131,7 @@
 
 .thumb:hover,
 .thumb-active {
-  border-color: #3b71b7;
+  border-color: #f39200;
 }
 
 /* Кнопки навигации снизу */
@@ -240,7 +182,7 @@
 
 .product-title {
   font-size: 32px;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   text-transform: uppercase;
   margin: 0;
   color: #fbfbfb;
@@ -266,7 +208,7 @@
 
 .product-price {
   font-size: 28px;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   color: #fbfbfb;
   font-weight: bold;
 }
@@ -281,7 +223,7 @@
 .section-title {
   font-size: 16px;
   text-transform: uppercase;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   color: #fbfbfb;
   margin: 0;
 }
@@ -294,7 +236,7 @@
 
 .size-btn {
   padding: 12px 15px;
-  background-color: #3b71b7;
+  background-color: #f39200;
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
@@ -308,11 +250,11 @@
 }
 
 .size-btn:hover {
-  background-color: #f39200;
+  background-color: #F35D00;
 }
 
 .size-btn.active {
-  background-color: #f39200;
+  background-color: #F35D00;
   border-color: #fff;
 }
 
@@ -350,19 +292,19 @@
   padding: 15px 30px;
   border: none;
   font-size: 16px;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .btn-primary {
-  background-color: #3b71b7;
+  background-color: #f39200;
   color: #fbfbfb;
 }
 
 .btn-primary:hover {
-  background-color: #f39200;
+  background-color: #F35D00;
 }
 
 .btn-secondary {
@@ -389,7 +331,7 @@
 
 .section-title-large {
   font-size: 48px;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   text-transform: uppercase;
   margin: 0 0 40px 0;
   color: #fbfbfb;
@@ -421,7 +363,7 @@
 .review-name {
   font-weight: bold;
   color: #191919;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
 }
 
 .review-date {
@@ -591,7 +533,7 @@
 
 .modal-title {
   font-size: 28px;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   margin: 0 0 30px 0;
   color: #191919;
   text-transform: uppercase;
@@ -607,7 +549,7 @@
 
 .modal-size-btn {
   padding: 20px;
-  background-color: #3b71b7;
+  background-color: #f39200;
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
@@ -621,11 +563,11 @@
 }
 
 .modal-size-btn:hover {
-  background-color: #f39200;
+  background-color: #F35D00;
 }
 
 .modal-size-btn.selected {
-  background-color: #f39200;
+  background-color: #F35D00;
   border-color: #191919;
 }
 
@@ -672,7 +614,7 @@
 .form-group label {
   font-weight: bold;
   color: #191919;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
 }
 
 .rating-selector {
@@ -703,7 +645,7 @@
 
 .form-group textarea:focus {
   outline: none;
-  border-color: #3b71b7;
+  border-color: #f39200;
 }
 
 /* Медиа запросы */

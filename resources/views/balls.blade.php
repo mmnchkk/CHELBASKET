@@ -11,14 +11,6 @@
 
     <div class="main">
         <div class="width">
-            <nav class="nav-menu">
-                <ul class="nav-items">
-                    <li class="nav-item"><a href="{{ route('home') }}">Главная</a></li>
-                    <li class="nav-item">/</li>
-                    <li class="nav-item">Каталог</li>
-                </ul>
-            </nav>
-
             <h1 class="title-catalog">Мячи</h1>
 
             <div class="filters">

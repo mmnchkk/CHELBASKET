@@ -1,53 +1,18 @@
-@font-face {
-  font-family: "PaluiSP"; 
-  src: url("../../public/fonts/PaluiSPDemo-Bold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-@font-face {
-  font-family: "VisbyBold"; 
-  src: url("../../public/fonts/VisbyBold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
-@font-face {
-  font-family: "VisbyHeavy"; 
-  src: url("../../public/fonts/VisbyHeavy.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
-@font-face {
-  font-family: "VisbySemibold"; 
-  src: url("../../public/fonts/VisbySemibold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
+@import "fonts.css";
 
 .main {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    background-color: #191919;
     color: #FFF;
-    padding-bottom: 200px;
+    padding-top: 180px;
     font-family: 'VisbyBold', sans-serif;
-    background-image: url("../../public/img/home/back-main.png");
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: 100%;
+    padding-bottom: 200px;
 }
 
 .main-container {
-    width: 1160px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
     gap: 80px;
 }
 
@@ -56,27 +21,26 @@
     margin: 80px 0;
     font-weight: normal;
     text-transform: uppercase;
-    font-family: "PaluiSP", sans-serif;
+    font-family: "PaluiSPDemo", sans-serif;
 }
 
 .basket {
     display: flex;
-    flex-direction: row;
-    gap: 9px;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 .products-list {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
+    width: 700px;
 }
 
 .product {
-    width: 691px;
-    position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    gap: 75px;
     padding: 20px;
     background-color: white;
     color: #111;
@@ -94,10 +58,17 @@
     text-align: center;
 }
 
+.product-count {
+    display: flex;
+    gap: 4px;
+}
+
 .count-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
-    box-sizing: border-box;
     border: 1px solid #111;
     background-color: transparent;
     color: #111;
@@ -105,8 +76,8 @@
 
 #remove-product {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    margin-top: 90px;
+    margin-left: 650px;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -114,26 +85,26 @@
 
 .basket-order {
     width: 460px;
-    height: fit-content;
+    height: 140px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+    padding: 11px 20px;
+    gap: 10px;
     background-color: #FFF;
     color: #111;
     box-sizing: border-box;
 }
 
 #place-an-order {
-    height: 60px;
+    height: 55px;
     background-color: #F39200;
     color: #FFF;
     border: none;
     transition: all 0.2s;
-    font-family: 'PaluiSP', sans-serif;
+    font-family: 'PaluiSPDemo', sans-serif;
 }
 #place-an-order:hover {
-    background-color: #E94E1B;;
+    background-color: #F35D00;;
 }
 
 

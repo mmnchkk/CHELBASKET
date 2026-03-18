@@ -32,11 +32,12 @@
 
 .filter-panel.active {
     left: 0;
+    box-shadow: 0px 10px 1000px #000000;
 }
 
 .filter-header {
-    font-family: PaluiSP, sans-serif;
-    background: #3B71B7;
+    font-family: PaluiSPDemo, sans-serif;
+    background: #F39200;
     padding: 47px;
     display: flex;
     justify-content: space-between;
@@ -62,7 +63,7 @@
 }
 
 .filter-content h3 {
-    font-family: PaluiSP, sans-serif;
+    font-family: PaluiSPDemo, sans-serif;
     margin-top: 35px;
     margin-bottom: 30px;
     font-size: 22px;
@@ -94,9 +95,15 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #3B71B7;
+    background-color: #F39200;
     padding: 15px;
     color: white;
+    transition: all 0.3s;
+}
+
+.size-item:hover {
+    background: #F35D00;
+    /* еще бы по клику состояние цвета менять */
 }
 
 .filter-content label {
@@ -106,7 +113,7 @@
 }
 
 .apply-btn {
-    font-family: PaluiSP, sans-serif;
+    font-family: PaluiSPDemo, sans-serif;
     padding: 15px;
     width: 100%;
     background: #F39200;
@@ -115,6 +122,11 @@
     font-weight: 700;
     border: none;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.apply-btn:hover {
+    background: #F35D00;
 }
 
 .custom-checkbox {

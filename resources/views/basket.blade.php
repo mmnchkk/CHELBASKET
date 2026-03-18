@@ -1,5 +1,5 @@
 @push('vite')
-    @vite('resources/css/basket.css')
+        @vite(['resources/css/basket.css', 'resources/js/basket.js'])
 @endpush
 
 <x-main-layout>

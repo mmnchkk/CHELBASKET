@@ -1,7 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "fonts.css";
 
 body {
   display: flex;
@@ -16,34 +13,8 @@ body {
   background-attachment: fixed;
 }
 
-@font-face {
-  font-family: "PaluiSP"; 
-  src: url("../../public/fonts/PaluiSPDemo-Bold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-@font-face {
-  font-family: "VisbyBold"; 
-  src: url("../fonts/VisbyBold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
-@font-face {
-  font-family: "VisbyHeavy"; 
-  src: url("../fonts/VisbyHeavy.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
-@font-face {
-  font-family: "VisbySemibold"; 
-  src: url("../fonts/VisbySemibold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
 .main {
+
   padding-top: 290px;
   margin-bottom: 200px;
 }
@@ -54,7 +25,7 @@ body {
 
 .main-title {
   font-size: 65px;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   color: #fbfbfb;
   margin-bottom: 80px;
 }
@@ -70,7 +41,7 @@ body {
   height: 35px;
   border: 1px solid #fbfbfb;
   color: #fbfbfb;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   font-size: 16px;
   background-color: transparent;
   cursor: pointer;
@@ -79,7 +50,7 @@ body {
 
 .btn-history:hover {
   border: none;
-  background-color: #3b71b7;
+  background-color: #f39200;
 }
 
 .btn-status {
@@ -87,7 +58,7 @@ body {
   height: 35px;
   border: 1px solid #fbfbfb;
   color: #fbfbfb;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   font-size: 16px;
   background-color: transparent;
   cursor: pointer;
@@ -96,7 +67,7 @@ body {
 
 .btn-status:hover {
   border: none;
-  background-color: #3b71b7;
+  background-color: #f39200;
 }
 
 .blocks {
@@ -106,7 +77,7 @@ body {
 
 .blocks-title {
   color: #fbfbfb;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   font-size: 30px;
   margin-bottom: 30px;
 }
@@ -127,6 +98,7 @@ body {
   color: #fbfbfb;
   font-size: 16px;
   font-family: "VisbySemibold", sans-serif;
+  margin: 0;
 }
 
 .blocks-btn {

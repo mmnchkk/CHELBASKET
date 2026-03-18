@@ -7,7 +7,7 @@
         Челбаскет
     </x-slot:title>
     <div class="main">
-<h2 class="main-title">Личный кабинет</h2>
+      <h2 class="main-title">Личный кабинет</h2>
 
       <div class="main-navigation">
         <a href="{{ route('history') }}"><button class="btn-history">История заказов</button></a>

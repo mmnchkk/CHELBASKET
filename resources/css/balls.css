@@ -1,36 +1,6 @@
-@font-face {
-  font-family: "PaluiSP"; 
-  src: url("../../public/fonts/PaluiSPDemo-Bold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-@font-face {
-  font-family: "VisbyBold"; 
-  src: url("../../public/fonts/VisbyBold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
-@font-face {
-  font-family: "VisbyHeavy"; 
-  src: url("../../public/fonts/VisbyHeavy.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
-
-@font-face {
-  font-family: "VisbySemibold"; 
-  src: url("../../public/fonts/VisbySemibold.otf") format("opentype"); 
-  font-style: normal; 
-  font-weight: normal; 
-}
+@import "fonts.css";
 
 .main {
-    background-image: url(../../public/img/background/background_black.svg);
-    background-repeat: repeat-y;
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;
     font-family: "VisbyBold", sans-serif;
     padding-top: 180px;
 }
@@ -57,41 +27,11 @@
     justify-content: center;
 }
 
-.nav-menu {
-  display: flex;
-  color: #fbfbfb;
-  display: flex;
-}
-
-.nav-items {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-left: -30px; 
-  /* соре подругому никак */
-}
-
-.nav-item {
-  list-style: none;
-  cursor: default;
-}
-
-.nav-item a {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.nav-item a:hover {
-  color: #3b71b7;
-}
-
 .title-catalog {
   font-size: 65px;
   font-weight: normal;
   text-transform: uppercase;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   color: #fbfbfb;
 }
 
@@ -106,9 +46,9 @@
   height: 70px;
   font-size: 16px;
   color: #fbfbfb;
-  background-color: #3b71b7;
+  background-color: #f39200;
   text-transform: uppercase;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   border: none;
   display: flex;
   align-items: center;
@@ -126,7 +66,7 @@
   color: #fbfbfb;
   background-color: #191919;
   text-transform: uppercase;
-  font-family: "PaluiSP", sans-serif;
+  font-family: "PaluiSPDemo", sans-serif;
   border: 1px solid #fbfbfb;
   display: flex;
   align-items: center;
@@ -139,7 +79,7 @@
 }
 
 .load-more-btn:hover{
-    background-color: #3b71b7;
+    background-color: #f39200;
     border: none;
 }
 
@@ -152,13 +92,13 @@
 .filter-dropdown {
     width: 430px;
     position: relative;
-    font-family: "PaluiSP", sans-serif;
+    font-family: "PaluiSPDemo", sans-serif;
     text-transform: uppercase;
     z-index: 1000; 
 }
 
 .filter-btn {
-    background: #3b71b7;
+    background: #f39200;
     color: white;
     padding: 29px 25px;
     display: flex;
@@ -209,7 +149,7 @@
 }
 
 .filter-menu li:hover {
-    background: #f39200;
+    background: #F35D00;
 }
 
 .filter-dropdown:hover .filter-menu {
@@ -217,7 +157,7 @@
     visibility: visible;
 }
 .card-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
