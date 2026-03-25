@@ -47,5 +47,5 @@
             <button class="load-more-btn">загрузить ещё</button>
        </div>
     </div>
-    <x-filter></x-filter>
+    <x-filter-full></x-filter-full>
 </x-main-layout>

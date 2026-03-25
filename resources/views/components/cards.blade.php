@@ -11,11 +11,11 @@
         <img src="/img/icons/edit.svg">
     </div>
 
-    <img class="card-image" src="{{ asset($product->path_img) }}">
+    <img class="card-image" src="{{$product->path_img}}" width="300px" height="294px">
 
     <div class="description">
         <p class="title">{{ $product->name }}</p>
-        <p class="price">{{ $product->price }} ₽</p>
+        <p class="price">{{ number_format($product->price, 0, '.', ' ') }} ₽</p>
     </div>
 
     <div class="card-button

@@ -7,6 +7,9 @@
 }
 .card-image{
   width: 100%;
+  min-height: 294px;
+  object-fit: cover;
+  object-position: center;
 }
 .rating {
   position: absolute;
@@ -26,6 +29,7 @@
 .title {
   font-size: 18px;
   margin: 12px 0 4px;
+  max-width: 200px;
 }
 .price {
   font-weight: bold;

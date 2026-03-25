@@ -131,11 +131,11 @@
 
 .custom-checkbox {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     cursor: pointer;
     font-size: 18px;
-    margin-bottom: 10px;
 }
 
 .custom-checkbox input {
@@ -153,8 +153,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
     border: 1px solid #999999;
     background: white;
     transition: 0.2s;
