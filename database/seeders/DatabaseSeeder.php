@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
             'stock_quantity' => 0,
             'price' => 3990,
             'characteristics' => [],
-            'path_img' => '/img/cards/ball-basket.jpg',
+            'path_img' => 'img/cards/ball-basket.jpg',
         ]);
 
         Product::create([
@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
             'stock_quantity' => 10,
             'price' => 1200,
             'characteristics' => [],
-            'path_img' => '/img/cards/ball-soft_1.jpg',
+            'path_img' => 'img/cards/ball-soft_1.jpg',
         ]);
 
         //Кофты(2)
@@ -87,7 +87,7 @@ class DatabaseSeeder extends Seeder
             'characteristics' => [],
             'path_img' => 'images/futbolka_logo.jpg',
         ]);
-
+        
         Product::create([
             'category_id' => 3,
             'name' => 'Футболка "ЧБК"',
