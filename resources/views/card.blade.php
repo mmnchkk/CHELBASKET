@@ -1,5 +1,5 @@
 @push('vite')
-    @vite(['resources/css/card.css', 'resources/js/card_script.js'])
+    @vite(['resources/css/card.css'])
     @vite('resources/css/overlay.css')
 @endpush
 
@@ -10,32 +10,25 @@
     <div class="main">
         <div class="main-product">
             <div class="width">
-                <!-- Основной контейнер товара -->
                 <div class="product-container">
-                    <!-- Галерея слайдов -->
                     <div class="product-gallery">
                         <div class="gallery-container">
-                            <!-- Миниатюры слева -->
                             <div class="gallery-thumbs-vertical">
                                 <div class="thumb thumb-active" style="background-image: url('img/mauka/mauka_black_1.jpg')"></div>
                                 <div class="thumb" style="background-image: url('img/mauka/mauka_black_1.jpg')"></div>
                                 <div class="thumb" style="background-image: url('img/mauka/mauka_black_1.jpg')"></div>
                             </div>
-
-                            <!-- Главный слайдер -->
                             <div class="gallery-main">
                                 <div class="swiper product-main-slider">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <img src="img/mauka/mauka_black_1.jpg" alt="Товар">
                                         </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/mauka/mauka_black_1.jpg" alt="Товар">
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img src="img/mauka/mauka_black_1.jpg" alt="Товар">
-                                        </div>
-                                    </div>
+                                    </div> 
+                                </div>
+                                 <div class="gallery-nav-bottom">
+                                        <button class="gallery-nav-btn-bottom prev-btn">&lt;</button>
+                                        <button class="gallery-nav-btn-bottom next-btn">&gt;</button>
                                 </div>
                                 <div class="rating-badge">
                                     <span class="star">★</span>
@@ -43,25 +36,14 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Кнопки навигации снизу -->
-                        <div class="gallery-nav-bottom">
-                            <button class="gallery-nav-btn-bottom prev-btn">←</button>
-                            <button class="gallery-nav-btn-bottom next-btn">→</button>
-                        </div>
+                        
                     </div>
 
-                    <!-- Информация о товаре -->
+                    
                     <div class="product-info">
-                        <!-- Заголовок и рейтинг -->
                         <div>
                             <h1 class="product-title">Футболка с логотипом</h1>
-                            <div class="product-rating">
-                                <span class="star-rating"></span>
-                                <span class="rating-count">(5 отзывов)</span>
-                            </div>
                         </div>
-                        <!-- Выбор размера -->
                         <div class="size-section">
                             <h3 class="section-title">Размер</h3>
                             <div class="size-grid">
@@ -100,7 +82,6 @@
                             </div>
                         </div>
 
-                        <!-- Описание -->
                         <div class="description-section">
                             <h3 class="section-title">Описание</h3>
                             <p class="description-text">
@@ -108,7 +89,6 @@
                             </p>
                         </div>
 
-                        <!-- Кнопки действия -->
                         <div class="action-buttons">
                             <button class="btn btn-primary" id="addToCartBtn">В КОРЗИНУ</button>
                             <button class="btn btn-secondary" id="leaveReviewBtn">ОСТАВИТЬ ОТЗЫВ</button>
@@ -116,11 +96,11 @@
                     </div>
                 </div>
 
-                <!-- Отзывы -->
                 <section class="reviews-section">
                     <h2 class="section-title-large">ОТЗЫВЫ</h2>
                     <div class="swiper reviews-slider">
                         <div class="swiper-wrapper">
+                            <div class="swiper-button-prev reviews-button-prev">&lt;</div>
                             <div class="swiper-slide">
                                 <div class="review-card">
                                     <div class="review-header">
@@ -157,33 +137,10 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-header">
-                                        <span class="review-name">АННА</span>
-                                        <span class="review-date">25 октября</span>
-                                        <span class="review-rating">★★★★☆</span>
-                                    </div>
-                                    <p class="review-text">
-                                        Футболка села отлично, материал приятный к телу. Цвет соответствует описанию. Доставка быстрая, упаковка качественная.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-header">
-                                        <span class="review-name">ДМИТРИЙ</span>
-                                        <span class="review-date">5 ноября</span>
-                                        <span class="review-rating">★★★★★</span>
-                                    </div>
-                                    <p class="review-text">
-                                        Отличный мерч! Носил на матч, получил массу комплиментов. Качество принта на высоте, ткань дышащая. Заказал еще одну!
-                                    </p>
-                                </div>
-                            </div>
+                            <div class="swiper-button-next reviews-button-next">&gt;</div>
                         </div>
-                        <div class="swiper-button-prev reviews-button-prev">←</div>
-                        <div class="swiper-button-next reviews-button-next">→</div>
+                        
+                        
                     </div>
                 </section>
             </div>
@@ -229,7 +186,6 @@
             </div>
         </div>
 
-        <!-- МОДАЛЬНОЕ ОКНО: ОСТАВИТЬ ОТЗЫВ -->
         <div class="modal modal-review" id="modalReview">
             <div class="modal-content">
                 <button class="modal-close" data-modal="modalReview">✕</button>

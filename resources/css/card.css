@@ -47,6 +47,7 @@
   max-height: 450px;
 }
 
+
 /* Миниатюры слева - вертикально */
 .gallery-thumbs-vertical {
   display: flex;
@@ -61,6 +62,21 @@
   flex: 1;
   max-width: calc(100% - 95px);
   max-height: 100%;
+}
+
+/* ===== Слайдер отзывов ===== */
+.reviews-slider {
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.swiper-slide {
+    width: auto;
 }
 
 .rating-badge {
@@ -117,6 +133,16 @@
   padding: 10px;
   box-sizing: border-box;
   background: transparent;
+}
+
+
+
+.reviews-button-prev {
+    left: -15px;
+}
+
+.reviews-button-next {
+    right: -15px;
 }
 
 .thumb {
@@ -385,8 +411,6 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  position: absolute;
-  top: -60px;
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -397,8 +421,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-  z-index: 10;
   font-size: 20px;
   font-weight: normal;
   min-width: 40px;
@@ -406,16 +428,6 @@
   font-family: "VisbySemibold", sans-serif;
 }
 
-/* Completely override button content to ensure only our arrows show */
-.swiper-button-prev,
-.swiper-button-next {
-  font-size: 20px;
-  font-weight: normal;
-  align-items: center;
-  justify-content: center;
-  font-family: "VisbySemibold", sans-serif;
-  position: relative;
-}
 
 /* Hide default pseudo-elements and SVG icons */
 .swiper-button-prev::after,
@@ -686,16 +698,6 @@
     gap: 10px;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    width: 36px;
-    height: 36px;
-    top: -55px;
-  }
-
-  .swiper-button-prev {
-    left: -20px;
-  }
 
   .swiper-button-next {
     right: -20px;
